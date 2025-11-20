@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import CertificationCard from '../components/CertificationCard';
 import linguaskillPdf from '../imageas/Peddinti Praneeth.pdf';
+import jenkinsPdf from '../imageas/Coursera_Jenkins.pdf';
+import eduskillsPdf from '../imageas/PRANEETH PEDDINTI_Eduskills.pdf';
 
 const Certifications = () => {
   const certifications = [
@@ -11,6 +13,27 @@ const Certifications = () => {
       date: '2024',
       link: linguaskillPdf,
       description: 'Demonstrated proficiency in English language skills including listening, reading, speaking, and writing. Achieved CEFR Level B2/C1.',
+    },
+    {
+      title: 'Oracle Cloud Infrastructure 2025 Certified DevOps Professional',
+      issuer: 'Oracle',
+      date: '2025',
+      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=93E3001A04D3F57A937682FC294C071A4AAD48E1D8258090A341E6B85656A607#',
+      description: "Designed for DevOps engineers and developers, this course covers core DevOps principles and Oracle Cloud Infrastructure (OCI) capabilities. It includes application development, testing, security, and deployment, preparing you for the OCI DevOps Professional Certification.",
+    },
+    {
+      title: 'Jenkins Technologies',
+      issuer: 'Coursera',
+      date: '2024',
+      link: jenkinsPdf,
+      description: 'Comprehensive training on Jenkins for Continuous Integration and Continuous Delivery (CI/CD). Covers installation, configuration, pipelines, and automated testing integration.',
+    },
+    {
+      title: 'Web Full Stack Developer Virtual Internship',
+      issuer: 'EduSkills',
+      date: 'April - June 2025',
+      link: eduskillsPdf,
+      description: 'Successfully completed 10 weeks Web Full Stack Developer Virtual Internship. Supported by AICTE.',
     },
 
   ];
@@ -55,7 +78,7 @@ const Certifications = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {certifications.map((cert, index) => (
-            <motion.div key={index} variants={itemVariants}>
+            <motion.div key={index} variants={itemVariants} className="h-full">
               <CertificationCard {...cert} />
             </motion.div>
           ))}

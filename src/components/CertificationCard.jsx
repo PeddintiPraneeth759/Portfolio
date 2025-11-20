@@ -6,7 +6,7 @@ const CertificationCard = ({ title, issuer, date, link, description }) => {
   return (
     <motion.div
       whileHover={{ y: -5 }}
-      className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 flex items-start gap-4"
+      className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 flex items-start gap-4 h-full"
     >
       <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full text-primary dark:text-blue-400">
         <FaAward size={24} />
