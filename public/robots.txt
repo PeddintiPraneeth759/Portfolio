@@ -1,0 +1,13 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cool-longma-00b70d.netlify.app/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 10
+
+# Disallow admin or private paths (add if needed)
+# Disallow: /admin/
+# Disallow: /private/
